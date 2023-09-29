@@ -14,6 +14,7 @@ TABLE OF CONTENTS
 }
 
 
+
 /* 2. Body */
 body {
 	background-color: #173C4B;
@@ -45,6 +46,7 @@ p {
 	margin: 0px;
 	font-family: HelveticaNeue-medium;
 	font-size: 1.25em;
+	position: relative;
 	margin-left: auto;
 	margin-top: -4px;
 	margin-right: -4px;
@@ -55,6 +57,7 @@ p {
 	margin: 0px;
 	font-family: HelveticaNeue-medium;
 	font-size: 1.25em;
+	position: relative;
 	margin-left: auto;
 	margin-top: -4px;
 	margin-right: -4px;
@@ -65,17 +68,15 @@ p {
 	margin: 0px;
 	font-family: HelveticaNeue-medium;
 	font-size: 1.25em;
+	position: relative;
 	margin-left: auto;
 	margin-top: -4px;
 	margin-right: -4px;
 }
 
 
-/* 3. Div */
-div {
-	
-}
 
+/* 3. Div */
 .container-fluid {
 	background-color: #B5BEC3;
 	border: 4px solid #181818;
