@@ -1,0 +1,121 @@
+/* ––––––––––––––––––––––––––––––––––––––––––
+TABLE OF CONTENTS 
+
+1. Universal Override
+2. Body
+3. Div
+4. Media Queries
+
+–––––––––––––––––––––––––––––––––––––––––– */
+
+/* 1. Universal Override */
+* {
+	box-sizing: border-box;
+}
+
+
+/* 2. Body */
+body {
+	background-color: #173C4B;
+	}
+
+h1 {
+	color: #BF884C;
+	text-align: center;
+	font-family: Cinzel;
+	font-weight: 600;
+	font-size: 4.5em;
+	margin: 30px 30px 60px 30px;
+	}
+
+h3 {
+	color: #ffffff;
+	border: 4px solid #181818;
+	text-align: center;
+	width: 120px;
+	}
+
+p {
+	color: ##414042;
+	padding: 0px 0px 0px 10px;
+}
+
+#chicken {
+	background-color: #5B1F1D;
+	margin: 0px;
+	font-family: HelveticaNeue-medium;
+	font-size: 1.25em;
+	margin-left: auto;
+	margin-top: -4px;
+	margin-right: -4px;
+}
+
+#beef {
+	background-color: #8C3426;
+	margin: 0px;
+	font-family: HelveticaNeue-medium;
+	font-size: 1.25em;
+	margin-left: auto;
+	margin-top: -4px;
+	margin-right: -4px;
+}
+
+#sushi {
+	background-color: #B75F56;
+	margin: 0px;
+	font-family: HelveticaNeue-medium;
+	font-size: 1.25em;
+	margin-left: auto;
+	margin-top: -4px;
+	margin-right: -4px;
+}
+
+
+/* 3. Div */
+div {
+	
+}
+
+.container-fluid {
+	background-color: #B5BEC3;
+	border: 4px solid #181818;
+	width: 100%;
+  	font-family: HelveticaNeue-light;
+}
+
+.row {
+	width: 100%;
+}
+
+
+
+/* 4. Media Queries */
+@media (min-width: 992px) {
+	.col-lg-4 {
+		width: 33.33%;
+		float: left;
+		padding: 10px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6 {
+		width: 50%;
+		float: left;
+		padding: 10px;
+	}
+	.col-md-12 {
+		width: 100%;
+		float: left;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 767px) {
+	.col-sm-12 {
+		width: 100%;
+		float: left;
+		padding: 10px;
+	}
+	
+}
