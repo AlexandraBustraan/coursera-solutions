@@ -15,7 +15,7 @@ TABLE OF CONTENTS
 /* 1. Document */
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: auto;
 }
 body {
 	background-color: #080808;
@@ -29,22 +29,17 @@ body {
 
 /* 2. Header */
 #header-nav {
-	background-color: #080808;
-  background: linear-gradient(to bottom, rgba(8,8,8, 0.5) 0%, rgba(8,8,8, 1) 100%), url('../images/jumbotron-1200.jpg') no-repeat center;
-  background-size: cover;
-  height: 200px;
+	background-color: #FFFFFF;
+  height: 100px;
   border-radius: 0;
   border: 0;
   margin: auto;
 }
+/* Brand */
 #logo-img {
-  background: url('../images/the-diamond-white_md.png') no-repeat;
-  width: 150px;
-  height: 150px;
-  margin: 10px 15px 10px 0;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  background: url('../images/the-diamond-black_md.png') no-repeat;
+  width: 100px;
+  height: 100px;
 }
 .navbar-brand {
   padding-top: 25px;
@@ -55,21 +50,20 @@ body {
   font-size: 1.2em;
   font-variant: small-caps;
   font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 0;
   line-height: .75;
   position: absolute;
-  top: 50px;
+  top: 20px;
   left: 150px;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
+/* Navbar */
 .nav-item {
 	font-family: 'Roboto', sans-serif;
-  color: #D4Af37;
+  color: #FFFFFF;
   font-size: 1.1em;
-  font-weight: 100;
+  font-weight: 500;
   right: 0;
 }
 #nav-list {
@@ -99,12 +93,11 @@ body {
   position: absolute;
   top: 50px;
   right: 20px;
-  margin: 30px;
 }
 ul.navbar-nav {
   text-align: right;
   position: absolute;
-  top: 70px;
+  top: 30px;
   right: 20px;
 }
 .nav>li>a {
@@ -117,9 +110,20 @@ ul.navbar-nav {
   padding-bottom: 10px;
 }
 .navbar-nav .nav-link {
-  padding-right: 55px;
+  padding-right: 30px;
 }
- .dropdown-toggle {
+/* nav links */
+.nav-link.active {
+  color: #D4Af37;
+}
+.nav-link {
+  color: #080808;
+}
+.nav-link:hover {
+  color: (8,8,8,.4);
+}
+/*toggle */
+.dropdown-toggle {
   background-color: #080808;
   border-color: #FFFFFF;
   border-style: solid;
@@ -129,23 +133,47 @@ ul.navbar-nav {
 }
 [type="button"] {
   background-color: #080808;
-  color: #FFFFFF;
   border: 0px;
+}
+button.navbar-toggler.dropdown {
+  color: #FFFFFF;
+}
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: rgba(8, 8, 8, 1);
+}
+a.nav-link.active.home {
+  color: #080808;
+}
+a.nav-link.menu a.nav-link.reservations {
+  color: #080808;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(8, 8, 8, .5);
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #D4Af37;
 }
 
 
 /* 3. Main Content */
+main.container-fluid {
+  background-color: #080808;
+  background: linear-gradient(to top, rgba(8,8,8, 0.8) 0%, rgba(8,8,8, 1) 100%), url('../images/jumbotron-1200.jpg') no-repeat center;
+  background-size: cover;
+}
 div#about-title {
-  margin: auto;
   text-align: center;
 	justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 h2.about-title {
 	text-align: center;
   font-size: 1.7em;
 	font-weight: 500;
-  margin-bottom: 40px;
-  margin-top: 40px;
 }
 .lead {
  	text-align: center;
@@ -163,7 +191,6 @@ h2.about-title {
 div#under {
   background-color: #D4Af37;
   color: #000000;
-  margin-top: 20px;
   margin-bottom: 50px;
   padding-bottom: 20px;
   float: left;
@@ -396,16 +423,16 @@ section#hours > p, section#address > p {
     width: 100%;
   }
   #logo-img {
-    background: url('../images/the-diamond-white_md.png') no-repeat;
-    width: 150px;
-    height: 150px;
+    background: url('../images/the-diamond-black_md.png') no-repeat;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 2px;
+    left: 5px;
   }
   .navbar-brand h1 {
     font-size: 3vw;
-    top: 65px;
+    top: 35px;
     left: 150px;
   }
   .visible-lg {
@@ -441,16 +468,16 @@ section#hours > p, section#address > p {
     right: 0;
 	}
   #logo-img {
-    background: url('../images/the-diamond-white_md.png') no-repeat;
-    width: 150px;
-    height: 150px;
+    background: url('../images/the-diamond-black_md.png') no-repeat;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 2px;
+    left: 5px;
   }
   .navbar-brand h1 {
-    font-size: 5vw;
-    top: 60px;
+    font-size: 4.7vw;
+    top: 35px;
     left: 150px;
   }
   .visible-md {
@@ -480,16 +507,16 @@ section#hours > p, section#address > p {
     padding: 0px 10px 0px 10px;
   }
   #logo-img {
-    background: url('../images/the-diamond-white_md.png') no-repeat;
-    width: 150px;
-    height: 150px;
+    background: url('../images/the-diamond-black_md.png') no-repeat;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 2px;
+    left: 5px;
   }
   .navbar-brand h1 {
     font-size: 5vw;
-    top: 60px;
+    top: 35px;
     left: 150px;
   }
   div.review-section {
@@ -538,6 +565,15 @@ section#hours > p, section#address > p {
     color: #080808;
     width: 2000px;
   }
+  .nav-link {
+    color: #FFFFFF;
+  }
+  .nav-link:hover {
+    color: (255,255,255,.4);
+  }
+  a.nav-link.active {
+    margin-top: 70px;
+  }
   a.nav-link {
     background-color: #080808;
     font-color: #FFFFFF;
@@ -558,17 +594,17 @@ section#hours > p, section#address > p {
     padding: 0px 10px 0px 10px;
   }
   #logo-img {
-    background: url('../images/the-diamond-white_sm.png') no-repeat;
-    width: 72px;
-    height: 72px;
+    background: url('../images/the-diamond-black_md.png') no-repeat;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: 35px;
-    left: 40px;
+    top: 2px;
+    left: 5px;
   }
   .navbar-brand h1 {
     font-size: 6vw;
-    top: 50px;
-    left: 120px;
+    top: 30px;
+    left: 140px;
   }
   div.review-section {
     padding-right: 20px;
@@ -580,6 +616,15 @@ section#hours > p, section#address > p {
   .visible-xs {
     display: none;
   }
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .5);
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 1);
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #D4Af37;
+}
 }
 
 /* xxs */
@@ -598,21 +643,17 @@ section#hours > p, section#address > p {
     margin: 0 auto 15px;
   }
   #logo-img {
-    background: url('../images/the-diamond-white_sm.png') no-repeat;
+    background: url('../images/the-diamond-black_sm.png') no-repeat;
     width: 72px;
     height: 72px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
   }
   .navbar-brand h1 {
-    font-family: 'Bodoni Moda', serif;
-    color: #D4Af37;
     font-size: 6.2vw;
-    font-variant: small-caps;
-    font-weight: 600;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: .75;
     position: absolute;
-    top: 50px;
+    top: 40px;
     left: 100px;
   }
   div#about-title {
