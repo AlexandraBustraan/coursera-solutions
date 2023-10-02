@@ -1,0 +1,631 @@
+/* ––––––––––––––––––––––––––––––––
+TABLE OF CONTENTS
+
+1. Document
+2. Header
+3. Main Content
+4. Reviews
+5. Menu Categories
+6. Footer
+7. Media Quieries
+
+–––––––––––––––––––––––––––––––– */
+
+
+/* 1. Document */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+	background-color: #080808;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* 2. Header */
+#header-nav {
+	background-color: #080808;
+  background: linear-gradient(to bottom, rgba(8,8,8, 0.5) 0%, rgba(8,8,8, 1) 100%), url('../images/jumbotron-1200.jpg') no-repeat center;
+  background-size: cover;
+  height: 200px;
+  border-radius: 0;
+  border: 0;
+  margin: auto;
+}
+#logo-img {
+  background: url('../images/the-diamond-white_md.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 {
+	font-family: 'Bodoni Moda', serif;
+  color: #D4Af37;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.nav-item {
+	font-family: 'Roboto', sans-serif;
+  color: #D4Af37;
+  font-size: 1.1em;
+  font-weight: 100;
+  right: 0;
+}
+#nav-list {
+ 	margin-top: 10px;
+}
+#nav-list a {
+ 	color: #FFFFFF;
+  text-align: center;
+  line-height: 3;
+}
+#nav-list a:hover {
+ 	background: #080808;
+}
+#nav-list a span {
+ 	font-size: 1.8em;
+  line-height: 3;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+ 	border: 1px solid #FFFFFF;
+}
+.navbar-header button.navbar-toggle {
+ 	clear: both;
+ 	margin-top: -30px;
+  line-height: 3;
+}
+.navbar-toggler {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  margin: 30px;
+}
+ul.navbar-nav {
+  text-align: right;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+}
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar-nav .nav-link {
+  padding-right: 55px;
+}
+ .dropdown-toggle {
+  background-color: #080808;
+  border-color: #FFFFFF;
+  border-style: solid;
+}
+.dropdown-menu>li>a{
+  color: #080808;
+}
+[type="button"] {
+  background-color: #080808;
+  color: #FFFFFF;
+  border: 0px;
+}
+
+
+/* 3. Main Content */
+div#about-title {
+  margin: auto;
+  text-align: center;
+	justify-content: center;
+}
+h2.about-title {
+	text-align: center;
+  font-size: 1.7em;
+	font-weight: 500;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.lead {
+ 	text-align: center;
+ 	font-size: .95em;
+  font-weight: 100;
+  line-height: 1.2;
+}
+[role="button"] {
+  background-color: #E2D2B6;
+  color: #080808;
+  border: 0px;
+  width: 200px;
+  margin: 40px 0px 40px 0px;
+}
+div#under {
+  background-color: #D4Af37;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  float: left;
+  text-align: center;
+  justify-content: center;
+}
+#cousine {
+  float: left;
+  text-align: center;
+  justify-content: center;
+}
+#wine-list {
+  float: left;
+  text-align: center;
+  justify-content: center;
+}
+#private {
+  float: left;
+  text-align: center;
+  justify-content: center;
+}
+h3.col {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-top: 40px;
+}
+p.columns {
+  text-align: center;
+  font-size: .9em;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+
+/* 4. Reviews */
+div.review-section {
+  background-color: #FFFFFF;
+  color: #000000;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+.reviews {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.15em;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  margin-top: 40px;
+  margin: auto;
+  width: 60%;
+}
+.reviews > span {
+  color: #D4AF37;
+  font-size: 1.6em;
+  text-align: center;
+  font-style: normal;
+}
+
+
+/* 5. Menu Categories */
+div#home-tiles {
+  margin-bottom: 100px;
+}
+#appetizers {
+	background: url("/images/appetizer.jpg") no-repeat, center;
+	height: 700px;
+	background-position: center;
+	object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+#appetizers:hover {
+  opacity: .5;
+  -webkit-filter: grayscale(0.3);
+  filter: grayscale(0.344);
+}
+#entrees {
+	background: url("/images/entree.jpg") no-repeat, center;
+	height: 700px;
+	background-position: center;
+	object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+#entrees:hover {
+  opacity: .5;
+  -webkit-filter: grayscale(0.3);
+  filter: grayscale(0.3);
+}
+#desserts {
+	background: url("/images/dessert.jpg") no-repeat, center;
+	height: 700px;
+	background-position: center;
+	object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+#desserts:hover {
+  opacity: .5;
+  -webkit-filter: grayscale(0.3);
+  filter: grayscale(0.3);
+}
+#drinks {
+	background: url("/images/drink.jpg") no-repeat, center;
+	height: 700px;
+	background-position: center;
+	bottom: 0;
+	right: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+#drinks:hover {
+  opacity: .5;
+  -webkit-filter: grayscale(.3);
+  filter: grayscale(0.3);
+}
+#appetizers span, #entrees span, #desserts span, #drinks span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 500;
+  background-color: #000000;
+  color: #FFFFFF;
+  opacity: .7;
+}
+
+
+/* 6. Footer */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 10px;
+  background-color: #080808;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+.panel-footer section {
+  padding: 0px 5px 0px 5px;
+  text-align: center;
+  }
+.panel-footer hr {
+  width: 50%;
+  }
+#hours, #address {
+	font-size: .9em;
+  line-height: 1.3;
+}
+section#hours > p, section#address > p {
+	font-family: 'Bodoni Moda', serif;
+	color: #D4AF37;
+	font-size: 1.25em;
+	font-weight: normal;
+	font-variant: small-caps;
+	margin: 0px;
+	padding-top: 40px;
+}
+.footer-body {
+	font-family: 'Roboto', sans-serif;
+	font-size: .9em;
+	font-weight: 100;
+}
+.footer-titles {
+	font-family: 'Roboto', sans-serif;
+	color: #D4AF37;
+	font-size: .9em;
+	font-weight: 100;
+}
+#italic {
+	font-style: italic;
+	font-size: .8em;
+	color: #E2D2B6;
+}
+#hours section, #address section {
+	color: #FFFFFF;
+}
+#map-tile {
+	margin-top: 10px;
+	max-height: 150px;
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+#copyright {
+	color: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: .75em;
+  font-weight: 300;
+  text-align: center;
+}
+#copyright span {
+	color: #FFFFFF;
+	font-family: 'Bodoni Moda', serif;
+	font-size: 1.3em;
+  font-variant: small-caps;
+  font-weight: normal;
+}
+
+
+/* 7. Media Queries */
+/* lg */
+@media (min-width: 1200px) {
+	.col-lg-6 {
+		width: 50%;
+		float: left;
+	}
+	.col-lg-4 {
+		width: 33.33%;
+		float: left;
+	}
+  .panel-footer section {
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    width: 100%;
+  }
+  #logo-img {
+    background: url('../images/the-diamond-white_md.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .navbar-brand h1 {
+    font-size: 3vw;
+    top: 65px;
+    left: 150px;
+  }
+  .visible-lg {
+    display: block;
+    }
+  .hidden-lg {
+    display: none;
+  }
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.col-md-6 {
+		width: 50%;
+		float: left;
+	}
+	.col-md-4 {
+		width: 33.33%;
+		float: left;
+	}
+	.col-md-3 {
+		width: 25%;
+		float: left;
+	}
+  .col-md-12 {
+    width: 100%;
+    float: left;
+  }
+	#appetizers #entrees #desserts #drinks {
+    height: 550px;
+    background-position: center;
+    bottom: 0;
+    right: 0;
+	}
+  #logo-img {
+    background: url('../images/the-diamond-white_md.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .navbar-brand h1 {
+    font-size: 5vw;
+    top: 60px;
+    left: 150px;
+  }
+  .visible-md {
+    display: block;
+  	}
+  .hidden-md {
+    display: none;
+  }
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-sm-6 {
+		width: 50%;
+		float: left;
+	}
+	.col-sm-12 {
+		width: 100%;
+		float: left;
+		padding: 10px;
+	}
+	.col-sm-3 {
+		width: 25%;
+		float: left;
+	}
+  .panel-footer section {
+    padding: 0px 10px 0px 10px;
+  }
+  #logo-img {
+    background: url('../images/the-diamond-white_md.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .navbar-brand h1 {
+    font-size: 5vw;
+    top: 60px;
+    left: 150px;
+  }
+  div.review-section {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .hidden-sm {
+    display: none;
+  }
+  .visible-sm {
+    display: none;
+  }
+}
+
+/* xs */
+@media (max-width: 767px) {
+	.col-xs-6 {
+		width: 50%;
+		float: left;
+	}
+	.col-xs-12 {
+		width: 100%;
+		float: left;
+		padding: 10px;
+  }
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  	}
+  .navbar-brand h1 {
+    padding-top: 10px;
+    font-size: 5vw; 
+  	}
+  .navbar-brand p {
+    font-size: .6em;
+    margin-top: 12px;
+  	}
+  a.nav-link.active {
+    margin-top: 50px;
+    margin-right: -20px;
+    background-color: #E2D2B6;
+    font-color: #080808;
+    width: 2000px;
+  }
+  .navbar-dark .navbar-nav .nav-link.active {
+    color: #080808;
+    width: 2000px;
+  }
+  a.nav-link {
+    background-color: #080808;
+    font-color: #FFFFFF;
+    width: 2000px;
+    position: absolute;
+    right: 0;
+    margin-right: -20px;
+  }  
+  #collapsable-nav a { 
+    font-size: 1.2em;
+    width: 100%;
+  	}
+  #collapsable-nav a span { 
+    font-size: 1em;
+    padding-right: 5px;
+  	}
+  .panel-footer section {
+    padding: 0px 10px 0px 10px;
+  }
+  #logo-img {
+    background: url('../images/the-diamond-white_sm.png') no-repeat;
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    top: 35px;
+    left: 40px;
+  }
+  .navbar-brand h1 {
+    font-size: 6vw;
+    top: 50px;
+    left: 120px;
+  }
+  div.review-section {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .hidden-xs {
+    display: none;
+  }
+  .visible-xs {
+    display: none;
+  }
+}
+
+/* xxs */
+@media (max-width: 479px) {
+	.col-xxs-12 {
+		width: 100%;
+    min-height: 1px;
+    float: left;
+  }
+  .navbar-brand h1 {
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+  #logo-img {
+    background: url('../images/the-diamond-white_sm.png') no-repeat;
+    width: 72px;
+    height: 72px;
+  }
+  .navbar-brand h1 {
+    font-family: 'Bodoni Moda', serif;
+    color: #D4Af37;
+    font-size: 6.2vw;
+    font-variant: small-caps;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+  }
+  div#about-title {
+    width: 100%;
+  }
+  div.review-section {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .hidden-xxs {
+    display: none;
+  }
+  .visible-xxs {
+    display: none;
+  }
+}
