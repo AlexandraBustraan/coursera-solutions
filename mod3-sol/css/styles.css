@@ -259,7 +259,7 @@ div#home-tiles {
   margin-bottom: 100px;
 }
 #appetizers {
-	background: url("/images/appetizer.jpg") no-repeat, center;
+	background: url("../images/appetizer.jpg") no-repeat, center;
 	height: 700px;
 	background-position: center;
 	object-fit: cover;
@@ -274,7 +274,7 @@ div#home-tiles {
   filter: grayscale(0.344);
 }
 #entrees {
-	background: url("/images/entree.jpg") no-repeat, center;
+	background: url("../images/entree.jpg") no-repeat, center;
 	height: 700px;
 	background-position: center;
 	object-fit: cover;
@@ -289,7 +289,7 @@ div#home-tiles {
   filter: grayscale(0.3);
 }
 #desserts {
-	background: url("/images/dessert.jpg") no-repeat, center;
+	background: url("../images/dessert.jpg") no-repeat, center;
 	height: 700px;
 	background-position: center;
 	object-fit: cover;
@@ -304,7 +304,7 @@ div#home-tiles {
   filter: grayscale(0.3);
 }
 #drinks {
-	background: url("/images/drink.jpg") no-repeat, center;
+	background: url("../images/drink.jpg") no-repeat, center;
 	height: 700px;
 	background-position: center;
 	bottom: 0;
