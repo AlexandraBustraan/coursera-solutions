@@ -163,21 +163,23 @@ main.container-fluid {
   background-color: #080808;
   background: linear-gradient(to top, rgba(8,8,8, 0.8) 0%, rgba(8,8,8, 1) 100%), url('../images/jumbotron-1200.jpg') no-repeat center;
   background-size: cover;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 div#about-title {
   text-align: center;
-	justify-content: center;
+justify-content: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 h2.about-title {
-	text-align: center;
+  text-align: center;
   font-size: 1.7em;
 	font-weight: 500;
 }
 .lead {
- 	text-align: center;
- 	font-size: .95em;
+  text-align: center;
+  font-size: .95em;
   font-weight: 100;
   line-height: 1.2;
 }
